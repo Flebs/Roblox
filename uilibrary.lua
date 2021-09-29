@@ -11,7 +11,6 @@ function Meth:DraggingEnabled(frame, parent)
         
     parent = parent or frame
     
-    -- stolen from wally or kiriot, kek
     local dragging = false
     local dragInput, mousePos, framePos
 
@@ -187,6 +186,7 @@ function Meth.CreateLib(MethName, themeList)
     local selectedTab 
     MethName = MethName or "Library"
     table.insert(Meth, MethName)
+	MethName = MethName or "Not Furious UI"
     for i,v in pairs(game.CoreGui:GetChildren()) do
         if v:IsA("ScreenGui") and v.Name == MethName then
             v:Destroy()
