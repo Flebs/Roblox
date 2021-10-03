@@ -1,1 +1,1 @@
-print('Hello')
+MethCode2
